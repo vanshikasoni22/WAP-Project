@@ -16,8 +16,8 @@ function Navbar() {
     ];
 
     return (
-        <nav className="bg-white text-zinc-900 shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-80 h-16 flex items-center">
-            <div className="container mx-auto px-4 flex items-center justify-between gap-4">
+        <nav className="bg-white text-zinc-900 shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-80 h-16 flex items-center w-full overflow-x-hidden">
+            <div className="w-full max-w-7xl mx-auto px-4 flex items-center justify-between gap-4">
                 <div className="flex items-center gap-4 md:gap-8 flex-1">
                     <Link to="/" onClick={() => setIsMenuOpen(false)}>
                         <img
@@ -65,11 +65,11 @@ function Navbar() {
 
             {/* Mobile Menu Overlay */}
             <div 
-                className={`fixed inset-0 top-16 bg-black/50 z-[55] transition-opacity duration-300 md:hidden ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                className={`fixed inset-0 top-16 bg-black/60 z-[90] transition-opacity duration-300 md:hidden ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
                 onClick={() => setIsMenuOpen(false)}
             />
             
-            <div className={`fixed top-16 right-0 bottom-0 w-[85%] max-w-[320px] bg-white z-[60] shadow-2xl transition-transform duration-300 ease-in-out md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed top-16 right-0 bottom-0 w-[85%] max-w-[320px] bg-white z-[100] shadow-2xl transition-transform duration-300 ease-in-out md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="p-6 flex flex-col gap-6 overflow-y-auto h-full">
                     {/* Search inside menu for mobile */}
                     <div className="relative flex items-center">

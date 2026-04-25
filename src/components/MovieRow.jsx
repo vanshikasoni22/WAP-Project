@@ -11,7 +11,7 @@ function MovieRow({ title, movie }) {
   };
 
   return (
-    <div className="container mx-auto px-4 my-6 relative">
+    <div className="w-full max-w-7xl mx-auto px-4 my-6 relative overflow-x-hidden">
       <h2 className="text-xl md:text-2xl font-bold mb-4">{title}</h2>
       <div 
         className="flex overflow-x-auto gap-4 pb-4 no-scrollbar" 
