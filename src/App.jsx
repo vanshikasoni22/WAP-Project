@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MovieSection from "./components/MovieSection";
-import Signin from "./components/signin";
+import Signin from "./components/Signin";
 import Giftcards from "./components/Giftcards";
 
 function App() {
